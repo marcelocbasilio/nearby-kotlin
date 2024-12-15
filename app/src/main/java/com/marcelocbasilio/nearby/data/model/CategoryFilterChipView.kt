@@ -3,7 +3,7 @@ package com.marcelocbasilio.nearby.data.model
 import androidx.annotation.DrawableRes
 import com.marcelocbasilio.nearby.R
 
-enum class NearbyCategoryFilterChipView(val description: String, @DrawableRes val icon: Int) {
+enum class CategoryFilterChipView(val description: String, @DrawableRes val icon: Int) {
     ALIMENTACAO(description = "Alimentação", icon = R.drawable.ic_tools_kitchen_2),
     COMPRAS(description = "Compras", icon = R.drawable.ic_shopping_bag),
     HOSPEDAGEM(description = "Hospedagem", icon = R.drawable.ic_bed),
@@ -14,7 +14,7 @@ enum class NearbyCategoryFilterChipView(val description: String, @DrawableRes va
     PADARIA(description = "Padaria", icon = R.drawable.ic_bakery);
 
     companion object {
-        fun fromDescription(description: String): NearbyCategoryFilterChipView? {
+        fun fromDescription(description: String): CategoryFilterChipView? {
             return entries.find { it.description == description }
         }
     }
