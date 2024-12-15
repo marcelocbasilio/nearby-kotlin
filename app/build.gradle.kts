@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.marcelocbasilio.nearby"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.marcelocbasilio.nearby"
