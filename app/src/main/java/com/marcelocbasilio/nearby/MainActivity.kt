@@ -11,6 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.marcelocbasilio.nearby.ui.screen.HomeScreen
+import com.marcelocbasilio.nearby.ui.screen.SplashScreen
+import com.marcelocbasilio.nearby.ui.screen.WelcomeScreen
 import com.marcelocbasilio.nearby.ui.theme.NearbyTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,12 +22,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NearbyTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+//                SplashScreen(onNavigateToWelcome = {})
+//                WelcomeScreen(onNavigateToHome = {})
+                HomeScreen(onNavigateToMarketDetails = {})
             }
         }
     }
