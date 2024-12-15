@@ -20,7 +20,7 @@ import com.marcelocbasilio.nearby.ui.theme.Gray500
 import com.marcelocbasilio.nearby.ui.theme.Typography
 
 @Composable
-fun MarketDetailsInfos(
+fun NearbyMarketDetailsInfos(
     modifier: Modifier = Modifier,
     market: Market
 ) {
@@ -80,8 +80,8 @@ fun MarketDetailsInfos(
 
 @Preview
 @Composable
-private fun MarketDetailsInfosPreview() {
-    MarketDetailsInfos(
+private fun NearbyMarketDetailsInfosPreview() {
+    NearbyMarketDetailsInfos(
         modifier = Modifier.fillMaxWidth(),
         market = mockMarkets.first()
     )

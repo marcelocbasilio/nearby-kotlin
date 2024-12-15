@@ -56,7 +56,7 @@ fun NearbyMarketDetailsCoupons(modifier: Modifier = Modifier, coupons: List<Stri
 
 @Preview
 @Composable
-private fun MarketDetailsCouponsPreview() {
+private fun NearbyMarketDetailsCouponsPreview() {
     NearbyMarketDetailsCoupons(
         modifier = Modifier.fillMaxWidth(),
         coupons = listOf("FM4345T5", "FM4345T6")
